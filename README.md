@@ -1,6 +1,6 @@
-# Logic Assignment 1
+# Logic Assignment 2
 
-Version control for Assignment 1 of CS F214 - Logic in CS, 2018-19.
+Version control for Assignment 2 of CS F214 - Logic in CS, 2018-19.
 
 ## Contributors
 
