@@ -29,12 +29,6 @@ int op_priority(char op){
     }
 }
 
-bool right_assoc(char op){
-    if(op=='>')
-        return true;
-    return false;
-}
-
 string infix_to_postfix(string infix_exp){
     stack<char> op_stack;
     string postfix="";
@@ -44,9 +38,7 @@ string infix_to_postfix(string infix_exp){
         }
         else if(is_operator(token)){
             while(!op_stack.empty() && 
-                  (op_priority(op_stack.top())>op_priority(token) ||
-                   (op_priority(op_stack.top())==op_priority(token)&&!right_assoc(op_stack.top()))
-                  ) &&
+                  op_priority(op_stack.top())>op_priority(token) &&
                   op_stack.top()!='('){
                 postfix.push_back(op_stack.top());
                 op_stack.pop();
