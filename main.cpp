@@ -12,6 +12,42 @@ namespace operators {
 
 using namespace std;
 
+
+class BTree{
+    char data;
+    BTree* left;
+    BTree* right;
+
+public:
+    BTree(char data, BTree* left=NULL, BTree* right=NULL){
+        this->data = data;
+        this->left = left;
+        this->right = right;
+    }
+    ~BTree(){
+        delete left;
+        delete right;
+    }
+    void add_left_child(char data){
+        BTree *left = new BTree(data);
+        this->left = left;
+    }
+    void add_right_child(char data){
+        BTree *right = new BTree(data);
+        this->right = right;
+    }
+    string inorder() const{
+        string expr;
+        if(left)
+            expr.append(left->inorder());
+        expr.push_back(data);
+        if(right)
+            expr.append(right->inorder());
+        return expr;
+    }
+};
+
+
 bool is_operand(char token){
     // Assumes operands are lowercase alphabets
     if(token>='a'&&token<='z')
@@ -71,4 +107,15 @@ string infix_to_postfix(string infix_exp){
         op_stack.pop();
     }
     return postfix;
+}
+
+int main(){
+    BTree* l = new BTree('p');
+    BTree* r = new BTree('^');
+    r->add_left_child('q');
+    r->add_right_child('r');
+    BTree root = BTree('V', l, r);
+    cout<<root.inorder();
+    // cout<<infix_to_postfix("p^q>q");
+    return 0;
 }
