@@ -29,11 +29,15 @@ public:
         delete right;
     }
     void add_left_child(char data){
-        BTree *left = new BTree(data);
+        this->left = new BTree(data);
+    }
+    void add_left_child(BTree* left){
         this->left = left;
     }
     void add_right_child(char data){
-        BTree *right = new BTree(data);
+        this->right = new BTree(data);
+    }
+    void add_right_child(BTree* right){
         this->right = right;
     }
     string inorder() const{
@@ -114,7 +118,8 @@ int main(){
     BTree* r = new BTree('^');
     r->add_left_child('q');
     r->add_right_child('r');
-    BTree root = BTree('V', l, r);
+    BTree root = BTree('V', l);
+    root.add_right_child(r);
     cout<<root.inorder();
     // cout<<infix_to_postfix("p^q>q");
     return 0;
