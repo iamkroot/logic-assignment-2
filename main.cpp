@@ -13,12 +13,11 @@ namespace operators {
 using namespace std;
 
 
-class BTree{
+struct BTree{
     char data;
     BTree* left;
     BTree* right;
 
-public:
     BTree(char data, BTree* left=NULL, BTree* right=NULL){
         this->data = data;
         this->left = left;
@@ -39,15 +38,6 @@ public:
     }
     void add_right_child(BTree* right){
         this->right = right;
-    }
-    string inorder() const{
-        string expr;
-        if(left)
-            expr.append(left->inorder());
-        expr.push_back(data);
-        if(right)
-            expr.append(right->inorder());
-        return expr;
     }
 };
 
@@ -130,10 +120,27 @@ BTree* postfix_to_parse_tree(string *postfix){
     }
 }
 
+string parse_tree_to_infix(BTree* root){
+    if(!root->left and !root->right)
+        return string(&(root->data));
+    string expr;
+    if(root->data != operators::NEG)
+        expr.push_back('(');
+    if(root->left)
+        expr.append(parse_tree_to_infix(root->left));
+    expr.push_back(root->data);
+    if(root->right)
+        expr.append(parse_tree_to_infix(root->right));
+    if(root->data != operators::NEG)
+        expr.push_back(')');
+    return expr;
+}
+
+
 int main(){
     string pf = infix_to_postfix("~~p^q>~(rVp)>~qVp");
     cout<<pf<<endl;
     BTree* root = postfix_to_parse_tree(&pf);
-    cout<<root->inorder();
+    cout<<parse_tree_to_infix(root);
     return 0;
 }
