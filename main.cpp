@@ -113,14 +113,27 @@ string infix_to_postfix(string infix_exp){
     return postfix;
 }
 
+BTree* postfix_to_parse_tree(string *postfix){
+    char last_token = postfix->back();
+    postfix->resize(postfix->length() - 1);
+    if(is_operand(last_token))
+        return new BTree(last_token);
+    else {
+        BTree* current = new BTree(last_token);
+        BTree* right = postfix_to_parse_tree(postfix);
+        current->add_right_child(right);
+        if(last_token != operators::NEG){
+            BTree* left = postfix_to_parse_tree(postfix);
+            current->add_left_child(left);
+        }
+        return current;
+    }
+}
+
 int main(){
-    BTree* l = new BTree('p');
-    BTree* r = new BTree('^');
-    r->add_left_child('q');
-    r->add_right_child('r');
-    BTree root = BTree('V', l);
-    root.add_right_child(r);
-    cout<<root.inorder();
-    // cout<<infix_to_postfix("p^q>q");
+    string pf = infix_to_postfix("~~p^q>~(rVp)>~qVp");
+    cout<<pf<<endl;
+    BTree* root = postfix_to_parse_tree(&pf);
+    cout<<root->inorder();
     return 0;
 }
