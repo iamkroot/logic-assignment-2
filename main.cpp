@@ -18,11 +18,8 @@ struct BTree{
     BTree* left;
     BTree* right;
 
-    BTree(char data, BTree* left=NULL, BTree* right=NULL){
-        this->data = data;
-        this->left = left;
-        this->right = right;
-    }
+    BTree(char data, BTree* left=NULL, BTree* right=NULL)
+    : data(data), left(left), right(right) {}
     ~BTree(){
         delete left;
         delete right;
