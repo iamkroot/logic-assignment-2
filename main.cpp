@@ -3,35 +3,9 @@
 #include <string>
 #include <map>
 #include "operators.h"
+#include "BTree.h"
 
 using namespace std;
-
-
-struct BTree{
-    char data;
-    BTree* left;
-    BTree* right;
-
-    BTree(char data, BTree* left=NULL, BTree* right=NULL)
-    : data(data), left(left), right(right) {}
-    ~BTree(){
-        delete left;
-        delete right;
-    }
-    void add_left_child(char data){
-        this->left = new BTree(data);
-    }
-    void add_left_child(BTree* left){
-        this->left = left;
-    }
-    void add_right_child(char data){
-        this->right = new BTree(data);
-    }
-    void add_right_child(BTree* right){
-        this->right = right;
-    }
-};
-
 
 string infix_to_postfix(string infix_exp){
     stack<char> op_stack;
