@@ -25,7 +25,7 @@ void BTree::add_right_child(BTree* right){
     this->right = right;
 }
 
-string BTree::get_inorder(){
+std::string BTree::get_inorder(){
     if(inorder!="")
         return inorder;
     if(left)
