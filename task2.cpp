@@ -26,3 +26,14 @@ ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> pre
         line2 = NULL;
     check_validity();
 }
+
+ProofLine* parse_line(string s, int line_num, vector<ProofLine*> prev_lines){
+    s.push_back('/');
+    string token;
+    vector <string> tmp;
+    istringstream iss(s);
+    while(getline(iss, token, '/')){
+        tmp.push_back(token);
+    }
+    return new ProofLine(line_num, tmp, prev_lines);
+}
