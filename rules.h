@@ -17,3 +17,6 @@ namespace rule_literals{
     const std::string IMPL_E {IMPL, verbs::ELIM};
     const std::string MT {"MT"};
 }
+
+bool check_valid_and_i(ProofLine* newline);
+bool check_valid_and_e1(ProofLine* newline);

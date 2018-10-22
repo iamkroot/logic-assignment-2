@@ -27,6 +27,21 @@ ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> pre
     check_validity();
 }
 
+void ProofLine::check_validity(){
+    if(rule_literal == rule_literals::PREM){
+        is_valid_formula = true;
+    }
+    else if(rule_literal == rule_literals::AND_I){
+        is_valid_formula = check_valid_and_i(this);
+    }
+    else if(rule_literal == rule_literals::AND_E1){
+        is_valid_formula = check_valid_and_e1(this);
+    }
+    else{
+        is_valid_formula = false;
+    }
+}
+
 ProofLine* parse_line(string s, int line_num, vector<ProofLine*> prev_lines){
     s.push_back('/');
     string token;
