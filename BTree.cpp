@@ -24,3 +24,14 @@ void BTree::add_right_child(char data){
 void BTree::add_right_child(BTree* right){
     this->right = right;
 }
+
+string BTree::get_inorder(){
+    if(inorder!="")
+        return inorder;
+    if(left)
+        inorder += left->get_inorder();
+    inorder += data;
+    if(right)
+        inorder += right->get_inorder();
+    return inorder;
+}
