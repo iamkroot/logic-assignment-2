@@ -20,3 +20,8 @@ namespace rule_literals{
 
 bool check_valid_and_i(ProofLine* newline);
 bool check_valid_and_e1(ProofLine* newline);
+bool check_valid_and_e2(ProofLine* newline);
+bool check_valid_or_i1(ProofLine* newline);
+bool check_valid_or_i2(ProofLine* newline);
+bool check_valid_impl_e(ProofLine* newline);
+bool check_valid_mt(ProofLine* newline);

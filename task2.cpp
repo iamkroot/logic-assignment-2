@@ -37,6 +37,21 @@ void ProofLine::check_validity(){
     else if(rule_literal == rule_literals::AND_E1){
         is_valid_formula = check_valid_and_e1(this);
     }
+    else if(rule_literal == rule_literals::AND_E2){
+        is_valid_formula = check_valid_and_e2(this);
+    }
+    else if(rule_literal == rule_literals::OR_I1){
+        is_valid_formula = check_valid_or_i1(this);
+    }
+    else if(rule_literal == rule_literals::OR_I2){
+        is_valid_formula = check_valid_or_i2(this);
+    }
+    else if(rule_literal == rule_literals::IMPL_E){
+        is_valid_formula = check_valid_impl_e(this);
+    }
+    else if(rule_literal == rule_literals::MT){
+        is_valid_formula = check_valid_mt(this);
+    }
     else{
         is_valid_formula = false;
     }
