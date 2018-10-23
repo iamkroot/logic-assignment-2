@@ -1,5 +1,6 @@
 #include <string>
 #include "operators.h"
+#include "task2.h"
 
 namespace verbs{
     const char INTRO = 'i';
