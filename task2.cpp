@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <iostream>
 #include "task1.h"
 #include "task2.h"
 #include "rules.h"
@@ -36,4 +37,26 @@ ProofLine* parse_line(string s, int line_num, vector<ProofLine*> prev_lines){
         tmp.push_back(token);
     }
     return new ProofLine(line_num, tmp, prev_lines);
+}
+
+void validate_proof() {
+    int n;
+    cout << "Enter number of lines in proof: ";
+    cin >> n;
+    vector<ProofLine*> proof;
+    cout<<"Enter the lines of the proof: \n";
+    cin.ignore(1);
+    for(int i=1;i<=n;i++){
+        string line;
+        cout<<i<<": ";
+        getline(cin, line);
+        proof.push_back(parse_line(line, i, proof));
+    }
+    for(auto proofline: proof){
+        if(!(proofline->is_valid_formula)){
+            cout<<"Invalid proof. Line number: "<<proofline->line_num<<'\n';
+            return;
+        }
+    }
+    cout<<"Valid proof\n";
 }

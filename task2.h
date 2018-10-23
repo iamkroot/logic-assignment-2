@@ -15,5 +15,6 @@ public:
 };
 
 ProofLine* parse_line(std::string s, int line_num, std::vector<ProofLine*> prev_lines);
+void validate_proof();
 
 #endif
