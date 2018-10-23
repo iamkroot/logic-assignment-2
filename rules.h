@@ -19,6 +19,8 @@ namespace rule_literals{
     const std::string MT {"MT"};
 }
 
+bool check_validity(ProofLine* newline);
+bool check_valid_prem(ProofLine* newline);
 bool check_valid_and_i(ProofLine* newline);
 bool check_valid_and_e1(ProofLine* newline);
 bool check_valid_and_e2(ProofLine* newline);

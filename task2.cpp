@@ -16,45 +16,15 @@ ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> pre
     if (parts.size() > 1)
         rule_literal = parts[1];
     int line_num1, line_num2;
-    if (parts.size() > 2 and line_num >= (line_num1 = stoi(parts[2])))
+    if (parts.size() > 2 and line_num > (line_num1 = stoi(parts[2])))
         line1 = prev_lines[line_num1 - 1];
     else
         line1 = NULL;
-    if (parts.size() > 3 and prev_lines.size() >= (line_num2 = stoi(parts[3])))
+    if (parts.size() > 3 and line_num > (line_num2 = stoi(parts[3])))
         line2 = prev_lines[line_num2 - 1];
     else
         line2 = NULL;
-    check_validity();
-}
-
-void ProofLine::check_validity(){
-    if(rule_literal == rule_literals::PREM){
-        is_valid_formula = true;
-    }
-    else if(rule_literal == rule_literals::AND_I){
-        is_valid_formula = check_valid_and_i(this);
-    }
-    else if(rule_literal == rule_literals::AND_E1){
-        is_valid_formula = check_valid_and_e1(this);
-    }
-    else if(rule_literal == rule_literals::AND_E2){
-        is_valid_formula = check_valid_and_e2(this);
-    }
-    else if(rule_literal == rule_literals::OR_I1){
-        is_valid_formula = check_valid_or_i1(this);
-    }
-    else if(rule_literal == rule_literals::OR_I2){
-        is_valid_formula = check_valid_or_i2(this);
-    }
-    else if(rule_literal == rule_literals::IMPL_E){
-        is_valid_formula = check_valid_impl_e(this);
-    }
-    else if(rule_literal == rule_literals::MT){
-        is_valid_formula = check_valid_mt(this);
-    }
-    else{
-        is_valid_formula = false;
-    }
+    is_valid_formula = check_validity(this);
 }
 
 ProofLine* parse_line(string s, int line_num, vector<ProofLine*> prev_lines){
