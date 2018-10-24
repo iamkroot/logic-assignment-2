@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['check_5fvalid_5fand_5fe1',['check_valid_and_e1',['../rules_8cpp.html#abdc10668ade35c80f0fd187c837e1a77',1,'check_valid_and_e1(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#abdc10668ade35c80f0fd187c837e1a77',1,'check_valid_and_e1(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5fand_5fe2',['check_valid_and_e2',['../rules_8cpp.html#add6d4592664b8ce7ed7e02f8f76a9a2a',1,'check_valid_and_e2(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#add6d4592664b8ce7ed7e02f8f76a9a2a',1,'check_valid_and_e2(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5fand_5fi',['check_valid_and_i',['../rules_8cpp.html#a118aab7800af68c5b32fa5e103c75741',1,'check_valid_and_i(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#a118aab7800af68c5b32fa5e103c75741',1,'check_valid_and_i(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5fimpl_5fe',['check_valid_impl_e',['../rules_8cpp.html#a0c6ca18751b18ba87a745683438fe31a',1,'check_valid_impl_e(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#a0c6ca18751b18ba87a745683438fe31a',1,'check_valid_impl_e(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5fmt',['check_valid_mt',['../rules_8cpp.html#a067d8de671da3f3ce43054723e31d232',1,'check_valid_mt(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#a067d8de671da3f3ce43054723e31d232',1,'check_valid_mt(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5for_5fi1',['check_valid_or_i1',['../rules_8cpp.html#a2a3a60e30b9b569cacc3e2f1ec08747a',1,'check_valid_or_i1(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#a2a3a60e30b9b569cacc3e2f1ec08747a',1,'check_valid_or_i1(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5for_5fi2',['check_valid_or_i2',['../rules_8cpp.html#abe95433e64d9bc565b87ccd6161a5db9',1,'check_valid_or_i2(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#abe95433e64d9bc565b87ccd6161a5db9',1,'check_valid_or_i2(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalid_5fprem',['check_valid_prem',['../rules_8cpp.html#a3d9c86a35ee3da94e663c41d40ff279b',1,'check_valid_prem(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#a3d9c86a35ee3da94e663c41d40ff279b',1,'check_valid_prem(ProofLine *newline):&#160;rules.cpp']]],
+  ['check_5fvalidity',['check_validity',['../rules_8cpp.html#ad34f3b0deb1e94d6b1c44a2de9680972',1,'check_validity(ProofLine *newline):&#160;rules.cpp'],['../rules_8h.html#ad34f3b0deb1e94d6b1c44a2de9680972',1,'check_validity(ProofLine *newline):&#160;rules.cpp']]]
+];

@@ -1,0 +1,74 @@
+\hypertarget{operators_8h}{}\section{operators.\+h File Reference}
+\label{operators_8h}\index{operators.\+h@{operators.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceoperators}{operators}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{operators_8h_add6a2ed794331617fad3b9a2dee85aff}{is\+\_\+operand} (char token)
+\item 
+bool \hyperlink{operators_8h_a10228ed592f29bc85c70f7652ccc0510}{is\+\_\+operator} (char token)
+\item 
+int \hyperlink{operators_8h_a8a4ebbb3e294da2153247286fd741cd8}{op\+\_\+priority} (char op)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \hyperlink{namespaceoperators_abc0d09c09b437de98007962a590ea557}{operators\+::\+N\+EG} \{\textquotesingle{}$\sim$\textquotesingle{}\}
+\item 
+const char \hyperlink{namespaceoperators_aff9dc11d489d31278c1e3f90ae09dd9b}{operators\+::\+A\+ND} \{\textquotesingle{}$^\wedge$\textquotesingle{}\}
+\item 
+const char \hyperlink{namespaceoperators_a1f469207e0d08770fc7bbac128cfd845}{operators\+::\+OR} \{\textquotesingle{}V\textquotesingle{}\}
+\item 
+const char \hyperlink{namespaceoperators_a40fe490f326324304d4529854fb2deea}{operators\+::\+I\+M\+PL} \{\textquotesingle{}$>$\textquotesingle{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{operators_8h_add6a2ed794331617fad3b9a2dee85aff}\label{operators_8h_add6a2ed794331617fad3b9a2dee85aff}} 
+\index{operators.\+h@{operators.\+h}!is\+\_\+operand@{is\+\_\+operand}}
+\index{is\+\_\+operand@{is\+\_\+operand}!operators.\+h@{operators.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+operand()}{is\_operand()}}
+{\footnotesize\ttfamily bool is\+\_\+operand (\begin{DoxyParamCaption}\item[{char}]{token }\end{DoxyParamCaption})}
+
+A function to check whether token is operand or not 
+\begin{DoxyParams}{Parameters}
+{\em token} & The character which is to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if token is an operand else 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operators_8h_a10228ed592f29bc85c70f7652ccc0510}\label{operators_8h_a10228ed592f29bc85c70f7652ccc0510}} 
+\index{operators.\+h@{operators.\+h}!is\+\_\+operator@{is\+\_\+operator}}
+\index{is\+\_\+operator@{is\+\_\+operator}!operators.\+h@{operators.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+operator()}{is\_operator()}}
+{\footnotesize\ttfamily bool is\+\_\+operator (\begin{DoxyParamCaption}\item[{char}]{token }\end{DoxyParamCaption})}
+
+A function to check whether token is operator or not 
+\begin{DoxyParams}{Parameters}
+{\em token} & The character which is to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if token is an operator else 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{operators_8h_a8a4ebbb3e294da2153247286fd741cd8}\label{operators_8h_a8a4ebbb3e294da2153247286fd741cd8}} 
+\index{operators.\+h@{operators.\+h}!op\+\_\+priority@{op\+\_\+priority}}
+\index{op\+\_\+priority@{op\+\_\+priority}!operators.\+h@{operators.\+h}}
+\subsubsection{\texorpdfstring{op\+\_\+priority()}{op\_priority()}}
+{\footnotesize\ttfamily int op\+\_\+priority (\begin{DoxyParamCaption}\item[{char}]{op }\end{DoxyParamCaption})}
+
+A function to determine to priority to the input character 
+\begin{DoxyParams}{Parameters}
+{\em op} & The character whose priority is to be determined \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding priority integer 
+\end{DoxyReturn}
