@@ -11,6 +11,7 @@
 std::string infix_to_postfix(std::string infix_exp);
 
 /**
+ * \warning This function modifies the postfix string it takes as argument!
  * @brief Generates a binary tree using given postfix expression
  * @param postfix Postfix expression which we want to parse
  * @return Root of the binary tree generated

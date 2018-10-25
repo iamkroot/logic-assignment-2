@@ -19,7 +19,7 @@ public:
     * @brief Constructor for creating a BTree object
     * @param token Character using which a new BTree object will be created
     */
-    explicit BTree(char token);
+    explicit BTree(char token);  // prevent implicit conversion by the compiler
 
     /**
      * @brief Destructor for given binary tree

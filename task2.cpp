@@ -10,7 +10,7 @@ using namespace std;
 
 ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> prev_lines) {
     this->line_num = line_num;
-    if (!parts.empty()) {
+    if (!parts.empty()) {  // Convert first part to parse tree
         string postfix = infix_to_postfix(parts[0]);
         formula = postfix_to_parse_tree(&postfix);
     }
@@ -18,9 +18,9 @@ ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> pre
         rule_literal = parts[1];
     int line_num1, line_num2;
     if (parts.size() > 2 and line_num > (line_num1 = stoi(parts[2])))
-        line1 = prev_lines[line_num1 - 1];
+        line1 = prev_lines[line_num1 - 1];  // store the reference to previous ProofLine mentioned in new line
     else
-        line1 = nullptr;
+        line1 = nullptr;  // in case the rule doesn't require reference to previous line
     if (parts.size() > 3 and line_num > (line_num2 = stoi(parts[3])))
         line2 = prev_lines[line_num2 - 1];
     else
@@ -30,13 +30,13 @@ ProofLine::ProofLine(int line_num, vector<string> parts, vector<ProofLine *> pre
 
 ProofLine *parse_line(string s, int line_num, vector<ProofLine *> prev_lines) {
     s.push_back('/');
-    string token;
-    vector<string> tmp;
+    string part;
+    vector<string> parts;
     istringstream iss(s);
-    while (getline(iss, token, '/')) {
-        tmp.push_back(token);
+    while (getline(iss, part, '/')) {  // keep reading parts of the input string separated by a '/'
+        parts.push_back(part);
     }
-    return new ProofLine(line_num, tmp, prev_lines);
+    return new ProofLine(line_num, parts, prev_lines);
 }
 
 void validate_proof() {
@@ -45,16 +45,16 @@ void validate_proof() {
     cin >> n;
     vector<ProofLine *> proof;
     cout << "Enter the lines of the proof: \n";
-    cin.ignore(1);
+    cin.ignore(1);  // ignore the newline of previous cout
     for (int i = 1; i <= n; i++) {
         string line;
         cout << i << ": ";
         getline(cin, line);
         proof.push_back(parse_line(line, i, proof));
     }
-    for (auto proofline: proof) {
+    for (auto proofline: proof) {  // iterate through the prooflines to look for an invalid proofline
         if (!(proofline->is_valid_formula)) {
-            cout << "Invalid proof. Line number: " << proofline->line_num << '\n';
+            cout << "Invalid proof. First error at line number " << proofline->line_num << '.\n';
             return;
         }
     }

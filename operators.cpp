@@ -25,6 +25,6 @@ int op_priority(char op) {
         case IMPL:
             return 2;
         default:
-            return -1;
+            return -1; // Give lowest priority to invalid operators
     }
 }

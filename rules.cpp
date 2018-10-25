@@ -3,7 +3,7 @@
 using namespace std;
 using namespace operators;
 
-bool check_validity(ProofLine *newline) {
+bool check_validity(ProofLine *newline) {  // matches the rule_literal of ProofLine with corresponding rule validity checker
     using namespace rule_literals;
     if (newline->rule_literal == PREM)
         return check_valid_prem(newline);
@@ -22,8 +22,12 @@ bool check_validity(ProofLine *newline) {
     else if (newline->rule_literal == MT)
         return check_valid_mt(newline);
     else
-        return false;
+        return false;  // in case rule_literal doesn't match any valid rule_literals
 }
+
+/* Rest of the code is self explanatory due to proper variable naming.
+   We check for equality of parse trees of the appropriate ProofLine objects by comparing their inorder traversal strings.
+ */
 
 bool check_valid_prem(ProofLine *newline) {
     return !(newline->line1 or newline->line2);
