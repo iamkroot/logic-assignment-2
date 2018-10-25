@@ -6,8 +6,8 @@
  * Defining verbs for ease of making changes if required
  */
 namespace verbs {
-    const char INTRO = 'i'; /**<  Defines INTRODUCTION */
-    const char ELIM = 'e'; /**<  Defines ELIMINATION */
+    const char INTRO{'i'}; /**<  Defines INTRODUCTION */
+    const char ELIM{'e'}; /**<  Defines ELIMINATION */
 }
 
 /**
