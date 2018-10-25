@@ -14,19 +14,19 @@ namespace operators {
 /**
  * A function to check whether token is operand or not
  * @param token The character which is to be checked
- * @return 1 if token is an operand else 0
+ * @return true if token is an operand else false
  */
 bool is_operand(char token);
 
 /**
  * A function to check whether token is operator or not
  * @param token The character which is to be checked
- * @return 1 if token is an operator else 0
+ * @return true if token is an operator else false
  */
 bool is_operator(char token);
 
 /**
- * A function to determine to priority to the input character
+ * A function to determine the priority(precedence) of the input character
  * @param op The character whose priority is to be determined
  * @return The corresponding priority integer
  */
