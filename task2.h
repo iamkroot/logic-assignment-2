@@ -25,7 +25,7 @@ public:
 };
 
 /**
- * /brief Makes new ProofLine object using the input string
+ * @brief Makes new ProofLine object using the input string
  * @param s Input string obtained from user
  * @param line_num Line number of current ProofLine
  * @param prev_lines Vector containing all previous ProofLine pointers

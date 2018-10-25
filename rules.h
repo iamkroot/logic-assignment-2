@@ -27,6 +27,7 @@ namespace rule_literals {
 
 /**
  * @brief Checks validity of given ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to ProofLine to be validated
  * @return true if the ProofLine is valid else false
  */
@@ -34,6 +35,7 @@ bool check_validity(ProofLine *newline);
 
 /**
  * @brief Checks validity of given premise ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the premise ProofLine
  * @return true if ProofLine is a premise else false
  */
@@ -41,6 +43,7 @@ bool check_valid_prem(ProofLine *newline);
 
 /**
  * @brief Checks validity of given ^i ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the ^i ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -48,6 +51,7 @@ bool check_valid_and_i(ProofLine *newline);
 
 /**
  * @brief Checks validity of given ^e1 ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the ^e1 ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -55,6 +59,7 @@ bool check_valid_and_e1(ProofLine *newline);
 
 /**
  * @brief Checks validity of given ^e2 ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the ^ie2 ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -62,6 +67,7 @@ bool check_valid_and_e2(ProofLine *newline);
 
 /**
  * @brief Checks validity of given Vi1 ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the Vi1 ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -69,6 +75,7 @@ bool check_valid_or_i1(ProofLine *newline);
 
 /**
  * @brief Checks validity of given Vi2 ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the Vi2 ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -76,6 +83,7 @@ bool check_valid_or_i2(ProofLine *newline);
 
 /**
  * @brief Checks validity of given >e ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the >e ProofLine
  * @return true if the ProofLine is valid else false
  */
@@ -83,6 +91,7 @@ bool check_valid_impl_e(ProofLine *newline);
 
 /**
  * @brief Checks validity of given MT ProofLine
+ * @details Complexity: O(1)
  * @param newline Pointer to the MT ProofLine
  * @return true if the ProofLine is valid else false
  */
