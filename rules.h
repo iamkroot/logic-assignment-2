@@ -1,3 +1,5 @@
+#ifndef RULES_H
+#define RULES_H
 #include <string>
 #include "operators.h"
 #include "task2.h"
@@ -105,3 +107,4 @@ bool check_valid_impl_e(ProofLine *newline);
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_mt(ProofLine *newline);
+#endif

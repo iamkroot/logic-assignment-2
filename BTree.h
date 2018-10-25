@@ -1,12 +1,11 @@
-#include <string>
-
 #ifndef BTREE_H
 #define BTREE_H
+#include <string>
 
 /**
  * @brief Class to represent a Binary Tree
  * @details This will be used to store the parse tree of the propositional formulas
- * 
+ *
  */
 class BTree {
     std::string inorder;

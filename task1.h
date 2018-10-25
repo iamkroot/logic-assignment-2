@@ -1,7 +1,6 @@
-#include "BTree.h"
-
 #ifndef TASK1_H
 #define TASK1_H
+#include "BTree.h"
 
 /**
  * @relatesalso BTree

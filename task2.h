@@ -1,8 +1,8 @@
-#include <vector>
-#include "BTree.h"
-
 #ifndef TASK2_H
 #define TASK2_H
+
+#include <vector>
+#include "BTree.h"
 /**
  * @brief Class containing segregated information about a ProofLine
  */
