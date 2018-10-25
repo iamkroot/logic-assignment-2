@@ -6,8 +6,8 @@
  * Defining verbs for ease of making changes if required
  */
 namespace verbs {
-    const char INTRO = 'i'; /**<  Defines INTRO to be the char 'i' */
-    const char ELIM = 'e'; /**<  Defines ELIM to be the char 'e' */
+    const char INTRO = 'i'; /**<  Defines INTRODUCTION */
+    const char ELIM = 'e'; /**<  Defines ELIMINATION */
 }
 
 /**
@@ -15,14 +15,14 @@ namespace verbs {
  */
 namespace rule_literals {
     using namespace operators; /**< Enables us to use AND, OR, IMPL, NEG */
-    const std::string PREM{"P"}; /**< Defines PREM to the string "P" */
-    const std::string AND_I{AND, verbs::INTRO}; /**< Defines AND_I to the string "^i" */
-    const std::string AND_E1{AND, verbs::ELIM, '1'}; /**< Defines AND_E1 to the string "^e1" */
-    const std::string AND_E2{AND, verbs::ELIM, '2'}; /**< Defines ANd_E2 to the string "^e2" */
-    const std::string OR_I1{OR, verbs::INTRO, '1'}; /**< Defines OR_I1 to the string "Vi1" */
-    const std::string OR_I2{OR, verbs::INTRO, '2'}; /**< Defines OR_I2 to the string "Vi2" */
-    const std::string IMPL_E{IMPL, verbs::ELIM}; /**< Defines IMPL_E to the string ">e" */
-    const std::string MT{"MT"}; /**< Defines MT to the string "MT" */
+    const std::string PREM{"P"}; /**< Defines PREMISE */
+    const std::string AND_I{AND, verbs::INTRO}; /**< Defines AND INTRODUCTION */
+    const std::string AND_E1{AND, verbs::ELIM, '1'}; /**< Defines AND ELIMINATION 1 */
+    const std::string AND_E2{AND, verbs::ELIM, '2'}; /**< Defines AND ELIMINATION 2 */
+    const std::string OR_I1{OR, verbs::INTRO, '1'}; /**< Defines OR INTRODUCTION 1 */
+    const std::string OR_I2{OR, verbs::INTRO, '2'}; /**< Defines OR INTRODUCTION 2 */
+    const std::string IMPL_E{IMPL, verbs::ELIM}; /**< Defines IMPLIES ELIMINATION */
+    const std::string MT{"MT"}; /**< Defines MODUS TOLLENS */
 }
 
 /**
