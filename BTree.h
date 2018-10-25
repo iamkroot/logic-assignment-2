@@ -4,7 +4,9 @@
 #define BTREE_H
 
 /**
- *
+ * @brief Class to represent a Binary Tree
+ * @details This will be used to store the parse tree of the propositional formulas
+ * 
  */
 class BTree {
     std::string inorder;
@@ -20,7 +22,7 @@ public:
     explicit BTree(char token);
 
     /**
-     * @brief Deconstructor for given binary tree
+     * @brief Destructor for given binary tree
      */
     ~BTree();
     /**

@@ -5,10 +5,10 @@
  * Defining operators using namespace to make it easy for changing input syntax as and when required
  */
 namespace operators {
-    const char NEG{'~'}; /**< Defines NEG to char '~' */
-    const char AND{'^'}; /**< Defines AND to char '^' */
-    const char OR{'V'}; /**< Defines OR to char 'V' */
-    const char IMPL{'>'}; /**< Defines IMPL to char '>' */
+    const char NEG{'~'}; /**< Defines NEGATION */
+    const char AND{'^'}; /**< Defines AND */
+    const char OR{'V'}; /**< Defines OR */
+    const char IMPL{'>'}; /**< Defines IMPLICATION */
 }
 
 /**
