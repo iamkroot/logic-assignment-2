@@ -50,6 +50,15 @@ void validate_proof() {
         string line;
         cout << i << ": ";
         getline(cin, line);
+        {   // Removes spaces in the input string line
+            int x = 0, y = 0;
+            while (line[x]) { //iterates untill end of string(\0) is reached
+                if (line[x]!=' ') // if iterator finds a space
+                    line[y++]=line[x]; // increments y while swaping the space with prev non space char
+                x++; // iterating to next char of string
+            }
+            line[y] = '\0'; //denotes the end of string
+        }
         proof.push_back(parse_line(line, i, proof));
     }
     for (auto proofline: proof) {  // iterate through the prooflines to look for an invalid proofline
