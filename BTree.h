@@ -18,7 +18,7 @@ public:
     /**
     * @brief Constructor for creating a BTree object
     * @details Complexity: O(1)
-    * @param token Character using which a new BTree object will be created
+    * @param[in] token Character using which a new BTree object will be created
     */
     explicit BTree(char token);  // prevent implicit conversion by the compiler
 
@@ -30,14 +30,14 @@ public:
     /**
      * @brief A function to assign left BTree pointer
      * @details Complexity: O(1)
-     * @param left The pointer to BTree object which has to be assigned
+     * @param[in] left The pointer to BTree object which has to be assigned
      */
     void add_left_child(BTree *left);
 
     /**
      * @brief A function to assign right BTree pointer
      * @details Complexity: O(1)
-     * @param right The pointer to BTree object which has to be assigned
+     * @param[in] right The pointer to BTree object which has to be assigned
      */
     void add_right_child(BTree *right);
     /**

@@ -26,73 +26,82 @@ namespace rule_literals {
 }
 
 /**
+ * @relatesalso ProofLine
  * @brief Checks validity of given ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to ProofLine to be validated
+ * @param[in] newline Pointer to ProofLine to be validated
  * @return true if the ProofLine is valid else false
  */
 bool check_validity(ProofLine *newline);
 
 /**
- * @brief Checks validity of given premise ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given PREMISE ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the premise ProofLine
- * @return true if ProofLine is a premise else false
+ * @param[in] newline Pointer to the PREMISE ProofLine
+ * @return true if ProofLine is a PREMISE else false
  */
 bool check_valid_prem(ProofLine *newline);
 
 /**
- * @brief Checks validity of given ^i ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given AND INTRODUCTION ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the ^i ProofLine
+ * @param[in] newline Pointer to the AND INTRODUCTION ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_and_i(ProofLine *newline);
 
 /**
- * @brief Checks validity of given ^e1 ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given AND ELIMINATION 1 ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the ^e1 ProofLine
+ * @param[in] newline Pointer to the AND ELIMINATION 1 ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_and_e1(ProofLine *newline);
 
 /**
- * @brief Checks validity of given ^e2 ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given AND ELIMINATION 2 ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the ^ie2 ProofLine
+ * @param[in] newline Pointer to the AND ELIMINATION 2 ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_and_e2(ProofLine *newline);
 
 /**
- * @brief Checks validity of given Vi1 ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given OR INTRODUCTION 1 ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the Vi1 ProofLine
+ * @param[in] newline Pointer to the OR INTRODUCTION 1 ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_or_i1(ProofLine *newline);
 
 /**
- * @brief Checks validity of given Vi2 ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given OR INTRODUCTION 2 ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the Vi2 ProofLine
+ * @param[in] newline Pointer to the OR INTRODUCTION 2 ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_or_i2(ProofLine *newline);
 
 /**
- * @brief Checks validity of given >e ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given IMPLICATION ELIMINATION ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the >e ProofLine
+ * @param[in] newline Pointer to the IMPLICATION ELIMINATION ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_impl_e(ProofLine *newline);
 
 /**
- * @brief Checks validity of given MT ProofLine
+ * @relatesalso ProofLine
+ * @brief Checks validity of given MODUS TOLLENS ProofLine
  * @details Complexity: O(1)
- * @param newline Pointer to the MT ProofLine
+ * @param[in] newline Pointer to the MODUS TOLLENS ProofLine
  * @return true if the ProofLine is valid else false
  */
 bool check_valid_mt(ProofLine *newline);
