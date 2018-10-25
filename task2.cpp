@@ -39,6 +39,18 @@ ProofLine *parse_line(string s, int line_num, vector<ProofLine *> prev_lines) {
     return new ProofLine(line_num, parts, prev_lines);
 }
 
+string remove_spaces(string str){
+// Removes spaces in the input string line
+    int x = 0, y = 0;
+    while (str[x]) {  //iterates until end of string(\0) is reached
+        if (str[x]!=' ')  // if iterator finds a space
+            str[y++]=str[x];  // increments y while swapping the space with prev non space char
+        x++;  // iterating to next char of string
+    }
+    str.erase(str.begin() + y, str.end());
+    return str;
+}
+
 void validate_proof() {
     int n;
     cout << "Enter number of lines in proof: ";
@@ -50,11 +62,12 @@ void validate_proof() {
         string line;
         cout << i << ": ";
         getline(cin, line);
+        line = remove_spaces(line);
         proof.push_back(parse_line(line, i, proof));
     }
     for (auto proofline: proof) {  // iterate through the prooflines to look for an invalid proofline
         if (!(proofline->is_valid_formula)) {
-            cout << "Invalid proof. First error at line number " << proofline->line_num << '.\n';
+            cout << "Invalid proof. First error at line number " << proofline->line_num << ".\n";
             return;
         }
     }
