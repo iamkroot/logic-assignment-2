@@ -36,21 +36,21 @@ Start by running the `Logic` file (precompiled) in a Linux terminal.
 + We have implemented a operator priority based approach to resolve ambiguity in case the formula is not well parenthesized.
 
 #### Memory
-![1](performance/Part1-Memory-1.png)
-![2](performance/Part1-Memory-2.png)
+![1](docs/performance/Part1-Memory-1.png)
+![2](docs/performance/Part1-Memory-2.png)
 Crashed (2819 atoms):
-![3](performance/Part1-Memory-3-Crashed.png)
+![3](docs/performance/Part1-Memory-3-Crashed.png)
 
 #### Time
-![1](performance/Part1-Time.png)
+![1](docs/performance/Part1-Time.png)
 
 ### Part 2
 
 #### Memory
-![1](performance/Part2-Valid-Invalid.png)
+![1](docs/performance/Part2-Valid-Invalid.png)
 
 #### Time
-![1](performance/Part2-Time.png)
+![1](docs/performance/Part2-Time.png)
 
 ## Tools used
 + Editors and IDEs: Sublime Text, Vim, CLion
