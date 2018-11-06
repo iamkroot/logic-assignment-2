@@ -1,0 +1,357 @@
+\hypertarget{classProofLine}{}\section{Proof\+Line Class Reference}
+\label{classProofLine}\index{Proof\+Line@{Proof\+Line}}
+
+
+Class containing segregated information about a \mbox{\hyperlink{classProofLine}{Proof\+Line}}.  
+
+
+
+
+{\ttfamily \#include $<$task2.\+h$>$}
+
+
+
+Collaboration diagram for Proof\+Line\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classProofLine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProofLine_a917582971a502aa8fc114467185c08b8}{Proof\+Line}} (int \mbox{\hyperlink{classProofLine_af1e2b73ad5275235028a4b131e574aa7}{line\+\_\+num}}, std\+::vector$<$ std\+::string $>$ parts, std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$$>$ prev\+\_\+lines)
+\begin{DoxyCompactList}\small\item\em A constructor of \mbox{\hyperlink{classProofLine}{Proof\+Line}} for given inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classProofLine_af1e2b73ad5275235028a4b131e574aa7}{line\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em Line number of current \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ \mbox{\hyperlink{classProofLine_ac9dee0241ef4f6371135098fd5b1a66d}{formula}}
+\begin{DoxyCompactList}\small\item\em Root of binary tree created from expression in input string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProofLine_acdc39e9e092a10ba3a6124f21c0eb420}{rule\+\_\+literal}}
+\begin{DoxyCompactList}\small\item\em String of rule inputted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ \mbox{\hyperlink{classProofLine_a7dbdcf0ea65aed377c5ac03303b474a6}{line1}}
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{classProofLine}{Proof\+Line}} with given line\+\_\+num. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ \mbox{\hyperlink{classProofLine_afed6bbbe21b20cdbde9398eb73ccf15f}{line2}}
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{classProofLine}{Proof\+Line}} with given line\+\_\+num. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a8531e674967263c2e6ba67d8bf12a336}{is\+\_\+valid\+\_\+formula}}
+\begin{DoxyCompactList}\small\item\em Whether current \mbox{\hyperlink{classProofLine}{Proof\+Line}} is true or false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classProofLine_ad34f3b0deb1e94d6b1c44a2de9680972}{check\+\_\+validity}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a3d9c86a35ee3da94e663c41d40ff279b}{check\+\_\+valid\+\_\+prem}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given P\+R\+E\+M\+I\+SE \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a118aab7800af68c5b32fa5e103c75741}{check\+\_\+valid\+\_\+and\+\_\+i}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given A\+ND I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_abdc10668ade35c80f0fd187c837e1a77}{check\+\_\+valid\+\_\+and\+\_\+e1}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_add6d4592664b8ce7ed7e02f8f76a9a2a}{check\+\_\+valid\+\_\+and\+\_\+e2}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a2a3a60e30b9b569cacc3e2f1ec08747a}{check\+\_\+valid\+\_\+or\+\_\+i1}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_abe95433e64d9bc565b87ccd6161a5db9}{check\+\_\+valid\+\_\+or\+\_\+i2}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a0c6ca18751b18ba87a745683438fe31a}{check\+\_\+valid\+\_\+impl\+\_\+e}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given I\+M\+P\+L\+I\+C\+A\+T\+I\+ON E\+L\+I\+M\+I\+N\+A\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classProofLine_a067d8de671da3f3ce43054723e31d232}{check\+\_\+valid\+\_\+mt}} (\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$newline)
+\begin{DoxyCompactList}\small\item\em Checks validity of given M\+O\+D\+US T\+O\+L\+L\+E\+NS \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ \mbox{\hyperlink{classProofLine_ab2fe671562f60c3554c37ad75985e036}{parse\+\_\+line}} (std\+::string s, int \mbox{\hyperlink{classProofLine_af1e2b73ad5275235028a4b131e574aa7}{line\+\_\+num}}, std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ $>$ prev\+\_\+lines)
+\begin{DoxyCompactList}\small\item\em Makes new \mbox{\hyperlink{classProofLine}{Proof\+Line}} object using the input string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProofLine_a43022f1f1f94d244fad4a528ef0a8726}{validate\+\_\+proof}} ()
+\begin{DoxyCompactList}\small\item\em Checks validity of user-\/given proof. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class containing segregated information about a \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProofLine_a917582971a502aa8fc114467185c08b8}\label{classProofLine_a917582971a502aa8fc114467185c08b8}} 
+\index{Proof\+Line@{Proof\+Line}!Proof\+Line@{Proof\+Line}}
+\index{Proof\+Line@{Proof\+Line}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{Proof\+Line()}{ProofLine()}}
+{\footnotesize\ttfamily Proof\+Line\+::\+Proof\+Line (\begin{DoxyParamCaption}\item[{int}]{line\+\_\+num,  }\item[{std\+::vector$<$ std\+::string $>$}]{parts,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$$>$}]{prev\+\_\+lines }\end{DoxyParamCaption})}
+
+
+
+A constructor of \mbox{\hyperlink{classProofLine}{Proof\+Line}} for given inputs. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em line\+\_\+num} & Line number of current \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em parts} & Vector of strings created by splitting of input string with delimiter \textquotesingle{}/\textquotesingle{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em prev\+\_\+lines} & Vector of pointers to all previous \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classProofLine_ad34f3b0deb1e94d6b1c44a2de9680972}\label{classProofLine_ad34f3b0deb1e94d6b1c44a2de9680972}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+validity@{check\+\_\+validity}}
+\index{check\+\_\+validity@{check\+\_\+validity}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+validity()}{check\_validity()}}
+{\footnotesize\ttfamily bool check\+\_\+validity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to \mbox{\hyperlink{classProofLine}{Proof\+Line}} to be validated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a3d9c86a35ee3da94e663c41d40ff279b}\label{classProofLine_a3d9c86a35ee3da94e663c41d40ff279b}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+prem@{check\+\_\+valid\+\_\+prem}}
+\index{check\+\_\+valid\+\_\+prem@{check\+\_\+valid\+\_\+prem}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+prem()}{check\_valid\_prem()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+prem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given P\+R\+E\+M\+I\+SE \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the P\+R\+E\+M\+I\+SE \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if \mbox{\hyperlink{classProofLine}{Proof\+Line}} is a P\+R\+E\+M\+I\+SE else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a118aab7800af68c5b32fa5e103c75741}\label{classProofLine_a118aab7800af68c5b32fa5e103c75741}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+and\+\_\+i@{check\+\_\+valid\+\_\+and\+\_\+i}}
+\index{check\+\_\+valid\+\_\+and\+\_\+i@{check\+\_\+valid\+\_\+and\+\_\+i}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+and\+\_\+i()}{check\_valid\_and\_i()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+and\+\_\+i (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given A\+ND I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the A\+ND I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_abdc10668ade35c80f0fd187c837e1a77}\label{classProofLine_abdc10668ade35c80f0fd187c837e1a77}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+and\+\_\+e1@{check\+\_\+valid\+\_\+and\+\_\+e1}}
+\index{check\+\_\+valid\+\_\+and\+\_\+e1@{check\+\_\+valid\+\_\+and\+\_\+e1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+and\+\_\+e1()}{check\_valid\_and\_e1()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+and\+\_\+e1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_add6d4592664b8ce7ed7e02f8f76a9a2a}\label{classProofLine_add6d4592664b8ce7ed7e02f8f76a9a2a}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+and\+\_\+e2@{check\+\_\+valid\+\_\+and\+\_\+e2}}
+\index{check\+\_\+valid\+\_\+and\+\_\+e2@{check\+\_\+valid\+\_\+and\+\_\+e2}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+and\+\_\+e2()}{check\_valid\_and\_e2()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+and\+\_\+e2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the A\+ND E\+L\+I\+M\+I\+N\+A\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a2a3a60e30b9b569cacc3e2f1ec08747a}\label{classProofLine_a2a3a60e30b9b569cacc3e2f1ec08747a}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+or\+\_\+i1@{check\+\_\+valid\+\_\+or\+\_\+i1}}
+\index{check\+\_\+valid\+\_\+or\+\_\+i1@{check\+\_\+valid\+\_\+or\+\_\+i1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+or\+\_\+i1()}{check\_valid\_or\_i1()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+or\+\_\+i1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 1 \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_abe95433e64d9bc565b87ccd6161a5db9}\label{classProofLine_abe95433e64d9bc565b87ccd6161a5db9}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+or\+\_\+i2@{check\+\_\+valid\+\_\+or\+\_\+i2}}
+\index{check\+\_\+valid\+\_\+or\+\_\+i2@{check\+\_\+valid\+\_\+or\+\_\+i2}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+or\+\_\+i2()}{check\_valid\_or\_i2()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+or\+\_\+i2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the OR I\+N\+T\+R\+O\+D\+U\+C\+T\+I\+ON 2 \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a0c6ca18751b18ba87a745683438fe31a}\label{classProofLine_a0c6ca18751b18ba87a745683438fe31a}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+impl\+\_\+e@{check\+\_\+valid\+\_\+impl\+\_\+e}}
+\index{check\+\_\+valid\+\_\+impl\+\_\+e@{check\+\_\+valid\+\_\+impl\+\_\+e}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+impl\+\_\+e()}{check\_valid\_impl\_e()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+impl\+\_\+e (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given I\+M\+P\+L\+I\+C\+A\+T\+I\+ON E\+L\+I\+M\+I\+N\+A\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the I\+M\+P\+L\+I\+C\+A\+T\+I\+ON E\+L\+I\+M\+I\+N\+A\+T\+I\+ON \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a067d8de671da3f3ce43054723e31d232}\label{classProofLine_a067d8de671da3f3ce43054723e31d232}} 
+\index{Proof\+Line@{Proof\+Line}!check\+\_\+valid\+\_\+mt@{check\+\_\+valid\+\_\+mt}}
+\index{check\+\_\+valid\+\_\+mt@{check\+\_\+valid\+\_\+mt}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{check\+\_\+valid\+\_\+mt()}{check\_valid\_mt()}}
+{\footnotesize\ttfamily bool check\+\_\+valid\+\_\+mt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$}]{newline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of given M\+O\+D\+US T\+O\+L\+L\+E\+NS \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newline} & Pointer to the M\+O\+D\+US T\+O\+L\+L\+E\+NS \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \mbox{\hyperlink{classProofLine}{Proof\+Line}} is valid else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_ab2fe671562f60c3554c37ad75985e036}\label{classProofLine_ab2fe671562f60c3554c37ad75985e036}} 
+\index{Proof\+Line@{Proof\+Line}!parse\+\_\+line@{parse\+\_\+line}}
+\index{parse\+\_\+line@{parse\+\_\+line}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{parse\+\_\+line()}{parse\_line()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ parse\+\_\+line (\begin{DoxyParamCaption}\item[{std\+::string}]{s,  }\item[{int}]{line\+\_\+num,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ $>$}]{prev\+\_\+lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Makes new \mbox{\hyperlink{classProofLine}{Proof\+Line}} object using the input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & Input string obtained from user \\
+\hline
+\mbox{\texttt{ in}}  & {\em line\+\_\+num} & Line number of current \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em prev\+\_\+lines} & Vector containing all previous \mbox{\hyperlink{classProofLine}{Proof\+Line}} pointers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created \mbox{\hyperlink{classProofLine}{Proof\+Line}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofLine_a43022f1f1f94d244fad4a528ef0a8726}\label{classProofLine_a43022f1f1f94d244fad4a528ef0a8726}} 
+\index{Proof\+Line@{Proof\+Line}!validate\+\_\+proof@{validate\+\_\+proof}}
+\index{validate\+\_\+proof@{validate\+\_\+proof}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{validate\+\_\+proof()}{validate\_proof()}}
+{\footnotesize\ttfamily void validate\+\_\+proof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Checks validity of user-\/given proof. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classProofLine_af1e2b73ad5275235028a4b131e574aa7}\label{classProofLine_af1e2b73ad5275235028a4b131e574aa7}} 
+\index{Proof\+Line@{Proof\+Line}!line\+\_\+num@{line\+\_\+num}}
+\index{line\+\_\+num@{line\+\_\+num}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{line\+\_\+num}{line\_num}}
+{\footnotesize\ttfamily int Proof\+Line\+::line\+\_\+num}
+
+
+
+Line number of current \mbox{\hyperlink{classProofLine}{Proof\+Line}}. 
+
+\mbox{\Hypertarget{classProofLine_ac9dee0241ef4f6371135098fd5b1a66d}\label{classProofLine_ac9dee0241ef4f6371135098fd5b1a66d}} 
+\index{Proof\+Line@{Proof\+Line}!formula@{formula}}
+\index{formula@{formula}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{formula}{formula}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBTree}{B\+Tree}}$\ast$ Proof\+Line\+::formula}
+
+
+
+Root of binary tree created from expression in input string. 
+
+\mbox{\Hypertarget{classProofLine_acdc39e9e092a10ba3a6124f21c0eb420}\label{classProofLine_acdc39e9e092a10ba3a6124f21c0eb420}} 
+\index{Proof\+Line@{Proof\+Line}!rule\+\_\+literal@{rule\+\_\+literal}}
+\index{rule\+\_\+literal@{rule\+\_\+literal}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{rule\+\_\+literal}{rule\_literal}}
+{\footnotesize\ttfamily std\+::string Proof\+Line\+::rule\+\_\+literal}
+
+
+
+String of rule inputted. 
+
+\mbox{\Hypertarget{classProofLine_a7dbdcf0ea65aed377c5ac03303b474a6}\label{classProofLine_a7dbdcf0ea65aed377c5ac03303b474a6}} 
+\index{Proof\+Line@{Proof\+Line}!line1@{line1}}
+\index{line1@{line1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{line1}{line1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProofLine}{Proof\+Line}}$\ast$ Proof\+Line\+::line1}
+
+
+
+Pointer to \mbox{\hyperlink{classProofLine}{Proof\+Line}} with given line\+\_\+num. 
+
+\mbox{\Hypertarget{classProofLine_afed6bbbe21b20cdbde9398eb73ccf15f}\label{classProofLine_afed6bbbe21b20cdbde9398eb73ccf15f}} 
+\index{Proof\+Line@{Proof\+Line}!line2@{line2}}
+\index{line2@{line2}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{line2}{line2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProofLine}{Proof\+Line}}$\ast$ Proof\+Line\+::line2}
+
+
+
+Pointer to \mbox{\hyperlink{classProofLine}{Proof\+Line}} with given line\+\_\+num. 
+
+\mbox{\Hypertarget{classProofLine_a8531e674967263c2e6ba67d8bf12a336}\label{classProofLine_a8531e674967263c2e6ba67d8bf12a336}} 
+\index{Proof\+Line@{Proof\+Line}!is\+\_\+valid\+\_\+formula@{is\+\_\+valid\+\_\+formula}}
+\index{is\+\_\+valid\+\_\+formula@{is\+\_\+valid\+\_\+formula}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{is\+\_\+valid\+\_\+formula}{is\_valid\_formula}}
+{\footnotesize\ttfamily bool Proof\+Line\+::is\+\_\+valid\+\_\+formula}
+
+
+
+Whether current \mbox{\hyperlink{classProofLine}{Proof\+Line}} is true or false. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{task2_8h}{task2.\+h}}\item 
+\mbox{\hyperlink{rules_8h}{rules.\+h}}\item 
+\mbox{\hyperlink{task2_8cpp}{task2.\+cpp}}\end{DoxyCompactItemize}

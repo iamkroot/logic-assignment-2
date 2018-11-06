@@ -1,0 +1,230 @@
+\hypertarget{classBTree}{}\section{B\+Tree Class Reference}
+\label{classBTree}\index{B\+Tree@{B\+Tree}}
+
+
+Class to represent a Binary Tree.  
+
+
+
+
+{\ttfamily \#include $<$B\+Tree.\+h$>$}
+
+
+
+Collaboration diagram for B\+Tree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classBTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBTree_a816ccfed62d3bd439b61c03f660d1cc6}{B\+Tree}} (char \mbox{\hyperlink{classBTree_a3d5016b19ab621d5c61cf633ec012a72}{token}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \mbox{\hyperlink{classBTree}{B\+Tree}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree_a1d0dbad21ec825a7c8e5625709010e6c}{$\sim$\+B\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for given binary tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBTree_ae80b1f2b89c404206d76e5371c820d7a}{add\+\_\+left\+\_\+child}} (\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$\mbox{\hyperlink{classBTree_ad7e7d928a099c40fbd0d323f76d7cf18}{left}})
+\begin{DoxyCompactList}\small\item\em A function to assign left \mbox{\hyperlink{classBTree}{B\+Tree}} pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBTree_a03ed2114a3f21b5f1b6b0ae93d7cdc91}{add\+\_\+right\+\_\+child}} (\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$\mbox{\hyperlink{classBTree_af95770a535a9278b37fd73d7b6ae7f5e}{right}})
+\begin{DoxyCompactList}\small\item\em A function to assign right \mbox{\hyperlink{classBTree}{B\+Tree}} pointer. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBTree_a408f4bcf02423637c7132bcc44646f01}{get\+\_\+inorder}} ()
+\begin{DoxyCompactList}\small\item\em A function for traversing the parse tree inorder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{classBTree_a3d5016b19ab621d5c61cf633ec012a72}{token}}
+\begin{DoxyCompactList}\small\item\em Char containing data for current node in binary tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ \mbox{\hyperlink{classBTree_ad7e7d928a099c40fbd0d323f76d7cf18}{left}}
+\begin{DoxyCompactList}\small\item\em Pointer to left node in binary tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ \mbox{\hyperlink{classBTree_af95770a535a9278b37fd73d7b6ae7f5e}{right}}
+\begin{DoxyCompactList}\small\item\em Pointer to right node in binary tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classBTree_a2dbc497c79c44fc43579cedee34296e8}{infix\+\_\+to\+\_\+postfix}} (std\+::string infix\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Converts the infix expression to postfix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ \mbox{\hyperlink{classBTree_a628ffca8bc269400217fa849038b6684}{postfix\+\_\+to\+\_\+parse\+\_\+tree}} (std\+::string $\ast$postfix)
+\begin{DoxyCompactList}\small\item\em Generates a binary tree using given postfix expression. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBTree_a9804f1d5620990cac8ac016f30cb6f4f}{parse\+\_\+tree\+\_\+to\+\_\+infix}} (\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Traverses a given tree to produce corresponding infix expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to represent a Binary Tree. 
+
+This will be used to store the parse tree of the propositional formulas 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBTree_a816ccfed62d3bd439b61c03f660d1cc6}\label{classBTree_a816ccfed62d3bd439b61c03f660d1cc6}} 
+\index{B\+Tree@{B\+Tree}!B\+Tree@{B\+Tree}}
+\index{B\+Tree@{B\+Tree}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{B\+Tree()}{BTree()}}
+{\footnotesize\ttfamily B\+Tree\+::\+B\+Tree (\begin{DoxyParamCaption}\item[{char}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for creating a \mbox{\hyperlink{classBTree}{B\+Tree}} object. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em token} & Character using which a new \mbox{\hyperlink{classBTree}{B\+Tree}} object will be created \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBTree_a1d0dbad21ec825a7c8e5625709010e6c}\label{classBTree_a1d0dbad21ec825a7c8e5625709010e6c}} 
+\index{B\+Tree@{B\+Tree}!````~B\+Tree@{$\sim$\+B\+Tree}}
+\index{````~B\+Tree@{$\sim$\+B\+Tree}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{$\sim$\+B\+Tree()}{~BTree()}}
+{\footnotesize\ttfamily B\+Tree\+::$\sim$\+B\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for given binary tree. 
+
+Complexity\+: O(1) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBTree_ae80b1f2b89c404206d76e5371c820d7a}\label{classBTree_ae80b1f2b89c404206d76e5371c820d7a}} 
+\index{B\+Tree@{B\+Tree}!add\+\_\+left\+\_\+child@{add\+\_\+left\+\_\+child}}
+\index{add\+\_\+left\+\_\+child@{add\+\_\+left\+\_\+child}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{add\+\_\+left\+\_\+child()}{add\_left\_child()}}
+{\footnotesize\ttfamily void B\+Tree\+::add\+\_\+left\+\_\+child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$}]{left }\end{DoxyParamCaption})}
+
+
+
+A function to assign left \mbox{\hyperlink{classBTree}{B\+Tree}} pointer. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em left} & The pointer to \mbox{\hyperlink{classBTree}{B\+Tree}} object which has to be assigned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBTree_a03ed2114a3f21b5f1b6b0ae93d7cdc91}\label{classBTree_a03ed2114a3f21b5f1b6b0ae93d7cdc91}} 
+\index{B\+Tree@{B\+Tree}!add\+\_\+right\+\_\+child@{add\+\_\+right\+\_\+child}}
+\index{add\+\_\+right\+\_\+child@{add\+\_\+right\+\_\+child}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{add\+\_\+right\+\_\+child()}{add\_right\_child()}}
+{\footnotesize\ttfamily void B\+Tree\+::add\+\_\+right\+\_\+child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$}]{right }\end{DoxyParamCaption})}
+
+
+
+A function to assign right \mbox{\hyperlink{classBTree}{B\+Tree}} pointer. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em right} & The pointer to \mbox{\hyperlink{classBTree}{B\+Tree}} object which has to be assigned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBTree_a408f4bcf02423637c7132bcc44646f01}\label{classBTree_a408f4bcf02423637c7132bcc44646f01}} 
+\index{B\+Tree@{B\+Tree}!get\+\_\+inorder@{get\+\_\+inorder}}
+\index{get\+\_\+inorder@{get\+\_\+inorder}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{get\+\_\+inorder()}{get\_inorder()}}
+{\footnotesize\ttfamily std\+::string B\+Tree\+::get\+\_\+inorder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A function for traversing the parse tree inorder. 
+
+Complexity\+: O(number of nodes in tree) on first run; O(1) on subsequent calls \begin{DoxyReturn}{Returns}
+A string with infix expression without brackets 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classBTree_a2dbc497c79c44fc43579cedee34296e8}\label{classBTree_a2dbc497c79c44fc43579cedee34296e8}} 
+\index{B\+Tree@{B\+Tree}!infix\+\_\+to\+\_\+postfix@{infix\+\_\+to\+\_\+postfix}}
+\index{infix\+\_\+to\+\_\+postfix@{infix\+\_\+to\+\_\+postfix}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{infix\+\_\+to\+\_\+postfix()}{infix\_to\_postfix()}}
+{\footnotesize\ttfamily std\+::string infix\+\_\+to\+\_\+postfix (\begin{DoxyParamCaption}\item[{std\+::string}]{infix\+\_\+exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Converts the infix expression to postfix. 
+
+Complexity\+: O(number of characters in infix expression) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em infix\+\_\+exp} & The user-\/given string expression in infix form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string in postfix form 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBTree_a628ffca8bc269400217fa849038b6684}\label{classBTree_a628ffca8bc269400217fa849038b6684}} 
+\index{B\+Tree@{B\+Tree}!postfix\+\_\+to\+\_\+parse\+\_\+tree@{postfix\+\_\+to\+\_\+parse\+\_\+tree}}
+\index{postfix\+\_\+to\+\_\+parse\+\_\+tree@{postfix\+\_\+to\+\_\+parse\+\_\+tree}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{postfix\+\_\+to\+\_\+parse\+\_\+tree()}{postfix\_to\_parse\_tree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ postfix\+\_\+to\+\_\+parse\+\_\+tree (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{postfix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Generates a binary tree using given postfix expression. 
+
+\begin{DoxyWarning}{Warning}
+This function modifies the postfix string it takes as argument!
+\end{DoxyWarning}
+Complexity\+: O(number of characters in postfix expression) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em postfix} & Postfix expression which we want to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Root of the binary tree generated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBTree_a9804f1d5620990cac8ac016f30cb6f4f}\label{classBTree_a9804f1d5620990cac8ac016f30cb6f4f}} 
+\index{B\+Tree@{B\+Tree}!parse\+\_\+tree\+\_\+to\+\_\+infix@{parse\+\_\+tree\+\_\+to\+\_\+infix}}
+\index{parse\+\_\+tree\+\_\+to\+\_\+infix@{parse\+\_\+tree\+\_\+to\+\_\+infix}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{parse\+\_\+tree\+\_\+to\+\_\+infix()}{parse\_tree\_to\_infix()}}
+{\footnotesize\ttfamily std\+::string parse\+\_\+tree\+\_\+to\+\_\+infix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+Traverses a given tree to produce corresponding infix expression. 
+
+Complexity\+: O(number of nodes in parse tree) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em root} & Root of binary tree to be traversed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string of infix expression of binary tree 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBTree_a3d5016b19ab621d5c61cf633ec012a72}\label{classBTree_a3d5016b19ab621d5c61cf633ec012a72}} 
+\index{B\+Tree@{B\+Tree}!token@{token}}
+\index{token@{token}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily char B\+Tree\+::token}
+
+
+
+Char containing data for current node in binary tree. 
+
+\mbox{\Hypertarget{classBTree_ad7e7d928a099c40fbd0d323f76d7cf18}\label{classBTree_ad7e7d928a099c40fbd0d323f76d7cf18}} 
+\index{B\+Tree@{B\+Tree}!left@{left}}
+\index{left@{left}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBTree}{B\+Tree}}$\ast$ B\+Tree\+::left}
+
+
+
+Pointer to left node in binary tree. 
+
+\mbox{\Hypertarget{classBTree_af95770a535a9278b37fd73d7b6ae7f5e}\label{classBTree_af95770a535a9278b37fd73d7b6ae7f5e}} 
+\index{B\+Tree@{B\+Tree}!right@{right}}
+\index{right@{right}!B\+Tree@{B\+Tree}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBTree}{B\+Tree}}$\ast$ B\+Tree\+::right}
+
+
+
+Pointer to right node in binary tree. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BTree_8h}{B\+Tree.\+h}}\item 
+\mbox{\hyperlink{BTree_8cpp}{B\+Tree.\+cpp}}\item 
+\mbox{\hyperlink{task1_8h}{task1.\+h}}\end{DoxyCompactItemize}

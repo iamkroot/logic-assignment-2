@@ -1,0 +1,86 @@
+\hypertarget{task1_8h}{}\section{task1.\+h File Reference}
+\label{task1_8h}\index{task1.\+h@{task1.\+h}}
+{\ttfamily \#include \char`\"{}B\+Tree.\+h\char`\"{}}\newline
+Include dependency graph for task1.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=131pt]{task1_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{task1_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{task1_8h_a2dbc497c79c44fc43579cedee34296e8}{infix\+\_\+to\+\_\+postfix}} (std\+::string infix\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Converts the infix expression to postfix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ \mbox{\hyperlink{task1_8h_a628ffca8bc269400217fa849038b6684}{postfix\+\_\+to\+\_\+parse\+\_\+tree}} (std\+::string $\ast$postfix)
+\begin{DoxyCompactList}\small\item\em Generates a binary tree using given postfix expression. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{task1_8h_a9804f1d5620990cac8ac016f30cb6f4f}{parse\+\_\+tree\+\_\+to\+\_\+infix}} (\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Traverses a given tree to produce corresponding infix expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{task1_8h_a2dbc497c79c44fc43579cedee34296e8}\label{task1_8h_a2dbc497c79c44fc43579cedee34296e8}} 
+\index{task1.\+h@{task1.\+h}!infix\+\_\+to\+\_\+postfix@{infix\+\_\+to\+\_\+postfix}}
+\index{infix\+\_\+to\+\_\+postfix@{infix\+\_\+to\+\_\+postfix}!task1.\+h@{task1.\+h}}
+\subsubsection{\texorpdfstring{infix\+\_\+to\+\_\+postfix()}{infix\_to\_postfix()}}
+{\footnotesize\ttfamily std\+::string infix\+\_\+to\+\_\+postfix (\begin{DoxyParamCaption}\item[{std\+::string}]{infix\+\_\+exp }\end{DoxyParamCaption})}
+
+
+
+Converts the infix expression to postfix. 
+
+Complexity\+: O(number of characters in infix expression) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em infix\+\_\+exp} & The user-\/given string expression in infix form \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string in postfix form 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task1_8h_a628ffca8bc269400217fa849038b6684}\label{task1_8h_a628ffca8bc269400217fa849038b6684}} 
+\index{task1.\+h@{task1.\+h}!postfix\+\_\+to\+\_\+parse\+\_\+tree@{postfix\+\_\+to\+\_\+parse\+\_\+tree}}
+\index{postfix\+\_\+to\+\_\+parse\+\_\+tree@{postfix\+\_\+to\+\_\+parse\+\_\+tree}!task1.\+h@{task1.\+h}}
+\subsubsection{\texorpdfstring{postfix\+\_\+to\+\_\+parse\+\_\+tree()}{postfix\_to\_parse\_tree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$ postfix\+\_\+to\+\_\+parse\+\_\+tree (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{postfix }\end{DoxyParamCaption})}
+
+
+
+Generates a binary tree using given postfix expression. 
+
+\begin{DoxyWarning}{Warning}
+This function modifies the postfix string it takes as argument!
+\end{DoxyWarning}
+Complexity\+: O(number of characters in postfix expression) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em postfix} & Postfix expression which we want to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Root of the binary tree generated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task1_8h_a9804f1d5620990cac8ac016f30cb6f4f}\label{task1_8h_a9804f1d5620990cac8ac016f30cb6f4f}} 
+\index{task1.\+h@{task1.\+h}!parse\+\_\+tree\+\_\+to\+\_\+infix@{parse\+\_\+tree\+\_\+to\+\_\+infix}}
+\index{parse\+\_\+tree\+\_\+to\+\_\+infix@{parse\+\_\+tree\+\_\+to\+\_\+infix}!task1.\+h@{task1.\+h}}
+\subsubsection{\texorpdfstring{parse\+\_\+tree\+\_\+to\+\_\+infix()}{parse\_tree\_to\_infix()}}
+{\footnotesize\ttfamily std\+::string parse\+\_\+tree\+\_\+to\+\_\+infix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBTree}{B\+Tree}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Traverses a given tree to produce corresponding infix expression. 
+
+Complexity\+: O(number of nodes in parse tree) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em root} & Root of binary tree to be traversed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string of infix expression of binary tree 
+\end{DoxyReturn}

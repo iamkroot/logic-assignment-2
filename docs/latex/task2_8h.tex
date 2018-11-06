@@ -1,0 +1,65 @@
+\hypertarget{task2_8h}{}\section{task2.\+h File Reference}
+\label{task2_8h}\index{task2.\+h@{task2.\+h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}B\+Tree.\+h\char`\"{}}\newline
+Include dependency graph for task2.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{task2_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{task2_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classProofLine}{Proof\+Line}}
+\begin{DoxyCompactList}\small\item\em Class containing segregated information about a \mbox{\hyperlink{classProofLine}{Proof\+Line}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ \mbox{\hyperlink{task2_8h_a6d1300f474077a1440e6d8d2406a3d97}{parse\+\_\+line}} (std\+::string s, int line\+\_\+num, std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$$>$ prev\+\_\+lines)
+\begin{DoxyCompactList}\small\item\em Makes new \mbox{\hyperlink{classProofLine}{Proof\+Line}} object using the input string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task2_8h_a43022f1f1f94d244fad4a528ef0a8726}{validate\+\_\+proof}} ()
+\begin{DoxyCompactList}\small\item\em Checks validity of user-\/given proof. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{task2_8h_a6d1300f474077a1440e6d8d2406a3d97}\label{task2_8h_a6d1300f474077a1440e6d8d2406a3d97}} 
+\index{task2.\+h@{task2.\+h}!parse\+\_\+line@{parse\+\_\+line}}
+\index{parse\+\_\+line@{parse\+\_\+line}!task2.\+h@{task2.\+h}}
+\subsubsection{\texorpdfstring{parse\+\_\+line()}{parse\_line()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$ parse\+\_\+line (\begin{DoxyParamCaption}\item[{std\+::string}]{s,  }\item[{int}]{line\+\_\+num,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classProofLine}{Proof\+Line}} $\ast$$>$}]{prev\+\_\+lines }\end{DoxyParamCaption})}
+
+
+
+Makes new \mbox{\hyperlink{classProofLine}{Proof\+Line}} object using the input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & Input string obtained from user \\
+\hline
+\mbox{\texttt{ in}}  & {\em line\+\_\+num} & Line number of current \mbox{\hyperlink{classProofLine}{Proof\+Line}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em prev\+\_\+lines} & Vector containing all previous \mbox{\hyperlink{classProofLine}{Proof\+Line}} pointers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created \mbox{\hyperlink{classProofLine}{Proof\+Line}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{task2_8h_a43022f1f1f94d244fad4a528ef0a8726}\label{task2_8h_a43022f1f1f94d244fad4a528ef0a8726}} 
+\index{task2.\+h@{task2.\+h}!validate\+\_\+proof@{validate\+\_\+proof}}
+\index{validate\+\_\+proof@{validate\+\_\+proof}!task2.\+h@{task2.\+h}}
+\subsubsection{\texorpdfstring{validate\+\_\+proof()}{validate\_proof()}}
+{\footnotesize\ttfamily void validate\+\_\+proof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks validity of user-\/given proof. 
+

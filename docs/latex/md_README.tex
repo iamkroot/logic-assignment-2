@@ -1,0 +1,87 @@
+Submission for Assignment 2 of CS F214 -\/ Logic in CS, 2018-\/19.
+
+\subsection*{Running}
+
+Start by running the {\ttfamily Logic} file (precompiled) in a Linux terminal.
+
+\subsection*{Features}
+
+
+\begin{DoxyItemize}
+\item Modularized code, separated into various files.
+\item Namespaces for constants so as to not pollute the global namespace.
+\item Well documented, including time complexities of every function.
+\item Performance and stress tested, to see the limits of the program.
+\end{DoxyItemize}
+
+\subsubsection*{Part 1}
+
+
+\begin{DoxyItemize}
+\item Convert an infix expression to postfix form
+\item Convert a postfix expression to a Binary Parse Tree
+\item Convert a Binary Parse Tree to infix expression
+\end{DoxyItemize}
+
+\subsubsection*{Part 2}
+
+
+\begin{DoxyItemize}
+\item Check validity of a given proof in propositional logic with a limited set of rules
+\begin{DoxyItemize}
+\item Premise
+\item And introduction
+\item And elimination
+\item Or introduction
+\item Implication eliminiation
+\item Modus Tollens
+\end{DoxyItemize}
+\item We convert the formula of each line to its parse tree, and then compare the inorder strings of previous proof lines as required by the rule.
+\end{DoxyItemize}
+
+\subsection*{Assumptions and Performance Testing}
+
+\subsubsection*{Part 1}
+
+
+\begin{DoxyItemize}
+\item We assume that the given formula of only contains propositional atoms made up of the 26 lowercase English alphabets, and that it is well formed propositional formula.
+\item We have implemented a operator priority based approach to resolve ambiguity in case the formula is not well parenthesized.
+\end{DoxyItemize}
+
+\paragraph*{Memory}
+
+  Crashed (2819 atoms)\+: 
+
+\paragraph*{Time}
+
+
+
+\subsubsection*{Part 2}
+
+\paragraph*{Memory}
+
+
+
+\paragraph*{Time}
+
+
+
+\subsection*{Tools used}
+
+
+\begin{DoxyItemize}
+\item Editors and I\+D\+Es\+: Sublime Text, Vim, C\+Lion
+\item Compilers\+: gcc and cmake
+\item Performance test\+: valgrind
+\item Documentation\+: doxygen
+\item Version Control\+: git, with a repo hosted at local gitlab \href{https://td.bits-hyderabad.ac.in/lab/mach64/logic-assgn-2/}\texttt{ server}.
+\end{DoxyItemize}
+
+\subsection*{Contributors}
+
+
+\begin{DoxyItemize}
+\item \href{f20170184@hyderabad.bits-pilani.ac.in}\texttt{ Krut Patel}
+\item \href{f20170130@hyderabad.bits-pilani.ac.in}\texttt{ Niral Khambhati} 
+\end{DoxyItemize}
