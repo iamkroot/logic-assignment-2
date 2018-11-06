@@ -41,16 +41,10 @@ Start by running the `Logic` file (precompiled) in a Linux terminal.
 Crashed (2819 atoms):
 ![3](docs/performance/Part1-Memory-3-Crashed.png)
 
-#### Time
-![1](docs/performance/Part1-Time.png)
-
 ### Part 2
 
 #### Memory
 ![1](docs/performance/Part2-Valid-Invalid.png)
-
-#### Time
-![1](docs/performance/Part2-Time.png)
 
 ## Tools used
 + Editors and IDEs: Sublime Text, Vim, CLion
