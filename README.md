@@ -51,10 +51,10 @@ Crashed (2819 atoms):
 + Compilers: gcc and cmake
 + Performance test: valgrind
 + Documentation: doxygen
-+ Version Control: git, with a repo hosted at local gitlab [server](https://td.bits-hyderabad.ac.in/lab/mach64/logic-assgn-2/).
++ Version Control: git
 
 ## Contributors
 
-+ [Krut Patel](f20170184@hyderabad.bits-pilani.ac.in)
-+ [Niral Khambhati](f20170130@hyderabad.bits-pilani.ac.in)
++ [Krut Patel](https://www.github.com/iamkroot)
++ [Niral Khambhati](https://www.github.com/stoicnerd)
 
